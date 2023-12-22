@@ -4,11 +4,13 @@ import Reactlogo from '../img/logo192.png'
 
 function Navbar() {
     return (
-        <div>
-            <img src={Reactlogo}></img>
-            <h1>React Logo</h1>
-            <h2>React course- pg1</h2>
-        </div>
+        <nav>
+            <div className='leftnav'>
+                <img src={Reactlogo} width={60}></img>
+                <h1>React Logo</h1>
+            </div>
+            <h2 className='rightnav'>React course- pg1</h2>
+        </nav>
     )
 }
 export default Navbar

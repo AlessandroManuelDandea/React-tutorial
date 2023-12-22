@@ -8,6 +8,7 @@ const page = (
     <div>
        <Navbar></Navbar>
         <Main></Main>
+        
     </div>
 )
 ReactDom.render(page, document.getElementById('root'))

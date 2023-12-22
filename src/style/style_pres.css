@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* project1 */
+
+.Presentation_cont{
+    @apply
+    flex
+    flex-wrap
+    justify-center
+}
+.Presentation{
+    @apply
+    bg-slate-950
+    flex
+    flex-col
+    flex-wrap
+    items-center
+    p-10
+    rounded-3xl
+    text-center
+    ;
+    width: 30rem;
+    box-shadow: 0px 0px 30px #0000003e
+}
+.Pres_img{
+    @apply
+    h-56
+    object-cover
+    rounded-3xl
+    border-4
+    border-cyan-500
+    mb-5;
+    box-shadow: 0px 0px 30px #7df4ff23;
+    object-position: 0% 40%;
+    
+}
+.Presentation h2{
+    @apply
+    mt-2
+    mb-2
+    text-cyan-600
+    font-bold
+    text-2xl
+}
+.Presentation h3{
+    @apply
+    mt-5
+    mb-2
+    text-cyan-600
+    font-semibold
+    text-2xl
+}
+.links_pre{
+    @apply 
+    flex
+    flex-row
+    mt-1
+    mb-4
+    font-bold
+    cursor-pointer	
+}
+.links_pre .link1{
+    @apply 
+    flex
+    flex-row
+    items-center
+    justify-center
+    mx-2
+    p-1
+    px-2
+    w-32
+    bg-slate-200
+    text-slate-950
+    rounded-lg;
+    transition: all 0.3s;
+}
+.links_pre .link1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #00f2ff9d;
+}
+.links_pre .link2{
+    @apply 
+    flex
+    flex-row
+    justify-center
+    bg-cyan-700
+    items-center
+    mx-2
+    p-1
+    w-32
+    text-slate-50
+    rounded-lg;
+    transition: all 0.3s;
+}
+.links_pre .link2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #ffffff69;
+}
+.links_pre .link2 img,.links_pre .link1 img{
+    @apply 
+    mx-1
+}
+.links_pre .link2 img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(6%) hue-rotate(338deg) brightness(104%) contrast(102%);
+}

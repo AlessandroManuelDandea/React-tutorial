@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('../src/style/style_pres.css');
+
+@layer base{
+
+
+    /* Navbar */
+
+
+    nav{
+        @apply 
+        flex
+        justify-between
+        items-center
+        pr-5
+        pl-5
+        p-3
+        text-xl
+        sticky
+        top-0
+        bg-slate-800
+        text-cyan-300;
+        box-shadow: 0px 10px 10px #00000018
+
+    }
+    .leftnav{
+        @apply 
+        flex
+        items-center
+        font-semibold
+        text-3xl
+        text-cyan-400
+    }
+    
+
+    /* Main */
+
+    
+    body{
+        @apply
+        bg-slate-900
+        text-slate-100;
+       
+    }
+
+    .Maincomp{
+        @apply
+        m-10;
+    }
+    .Maincomp h1{
+        @apply
+        text-4xl
+        font-semibold
+        text-cyan-400
+    }
+    .Maincomp ul{
+        @apply
+        ml-6
+        list-disc
+        decoration-cyan-500
+    }
+    .Maincomp li{
+        @apply
+        m-4
+        italic
+    }
+    
+
+    
+   
+}
