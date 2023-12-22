@@ -4,7 +4,7 @@ import Reactlogo from '../img/logo192.png'
 
 function Navbar() {
     return (
-        <nav>
+        <nav className='nav_main'>
             <div className='leftnav'>
                 <img src={Reactlogo} width={60}></img>
                 <h1>React Logo</h1>

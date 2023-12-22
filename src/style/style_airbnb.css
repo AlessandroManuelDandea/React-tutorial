@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@layer base {
+  .Airbnb_cont {
+    @apply flex
+        justify-center
+        mt-6
+        mx-2
+        rounded-2xl;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+
+
+  .Airbnb {
+    @apply w-screen
+        mx-9
+        bg-slate-50
+        relative
+        overflow-auto
+       ;
+    height: 25rem;
+    
+  }
+ 
+  
+  .nav_Airbnb {
+    @apply bg-slate-50
+        flex
+        items-center
+        text-lg
+        font-bold
+        rounded-xl
+        p-2;
+    z-index: 1;
+    box-shadow: 0px 10px 10px #00000014;
+  }
+
+  .nav_Airbnb img {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(37%) saturate(3630%)
+      hue-rotate(319deg) brightness(92%) contrast(97%);
+  }
+  .nav_Airbnb h1 {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(37%) saturate(3630%)
+      hue-rotate(319deg) brightness(92%) contrast(97%);
+  }
+  .nav_Airbnb h1 {
+    @apply text-black;
+  }
+  .top_img_cont {
+    @apply flex
+        flex-wrap
+        flex-row
+        m-3
+        justify-center
+        items-center;
+  }
+  .top_img_item {
+    @apply m-1;
+  }
+  .top_img_item img {
+    @apply w-20
+        rounded-xl
+        mt-2;
+    width: 5rem;
+    box-shadow: 0px 3px 10px #00000048;
+  }
+  .Hero_desc {
+    @apply mx-9
+    mt-4;
+  }
+  .Hero_desc h1 {
+    @apply font-bold
+    text-5xl;
+    color: #000;
+  }
+  .Hero_desc p {
+    @apply m-1
+    
+    mr-56
+    text-sm;
+    color: #000;
+  }
+
+  /* Card */
+
+  .Card_img {
+    @apply rounded-md
+    h-36
+    object-cover;
+    object-position: 0% 70%;
+  }
+  .Card_cont {
+    @apply text-black
+    flex
+    flex-row
+    m-6
+    overflow-y-auto
+    snap-x
+   ;
+  }
+
+  .Card_cont .card {
+    @apply w-48
+     my-8
+     snap-center
+    p-4
+    mx-3
+    rounded-2xl;
+    box-shadow: 0px 0px 10px #000000af;
+    min-width: 12rem;
+  }
+  .ratting_cont {
+    @apply my-1
+    flex
+    items-baseline;
+  }
+  .ratting_cont img {
+    @apply mr-1;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(37%) saturate(3630%)
+      hue-rotate(319deg) brightness(92%) contrast(97%);
+  }
+  .Card_cont .description {
+    @apply italic;
+  }
+  .Card_cont .price {
+    @apply text-zinc-500;
+  }
+}
