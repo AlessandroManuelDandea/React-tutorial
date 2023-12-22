@@ -10,32 +10,36 @@ import makeup from '../img/airbnb/makeup.jpg'
 import soocer from '../img/airbnb/soocer.jpg'
 import swimming from '../img/airbnb/swiming.jpeg'
 import Card from './card_airbnb.js'
+import CardData from './CardData.js'
 
 
 function Airbnb() {
+    const carddata = CardData.map((item) => {
+        return <Card {...item} />
+    })
     return (
         <div className='Airbnb_cont'>
             <div className='Airbnb'>
                 <nav className='nav_Airbnb'>
-                    <img src={Airbnbsvg} width={30}loading='lazy'></img>
+                    <img src={Airbnbsvg} width={30} loading='lazy'></img>
                     <h1>Airbnb</h1>
                 </nav>
                 <div className='top_img_cont'>
                     <div className='top_img_item'>
-                        <img src={cooking} width={30}loading='lazy'></img>
-                        <img src={film} width={30}loading='lazy'></img>
+                        <img src={cooking} width={30} loading='lazy'></img>
+                        <img src={film} width={30} loading='lazy'></img>
                     </div>
                     <div className='top_img_item'>
-                        <img src={guitar} width={30}loading='lazy'></img>
-                        <img src={gym} width={30}loading='lazy'></img>
-                        <img src={makeup} width={30}loading='lazy'></img>
+                        <img src={guitar} width={30} loading='lazy'></img>
+                        <img src={gym} width={30} loading='lazy'></img>
+                        <img src={makeup} width={30} loading='lazy'></img>
                     </div>
                     <div className='top_img_item'>
-                        <img src={running} width={30}loading='lazy' ></img>
-                        <img src={soocer} width={30}loading='lazy'></img>
+                        <img src={running} width={30} loading='lazy' ></img>
+                        <img src={soocer} width={30} loading='lazy'></img>
                     </div>
                     <div className='top_img_item'>
-                        <img src={swimming} width={30}loading='lazy'></img>
+                        <img src={swimming} width={30} loading='lazy'></img>
                     </div>
                     <div className='top_img_item'>
                     </div>
@@ -45,11 +49,7 @@ function Airbnb() {
                     <p>The ultimate gateway to unique stays and unforgettable experiences. With a global network of hosts offering everything from cozy apartments to luxurious villas, Airbnb connects adventurers with one-of-a-kind accommodations. Whether it's a serene escape nestled in nature or a vibrant urban oasis, Airbnb invites you to discover, belong, and create cherished memories wherever you go.</p>
                 </div>
                 <div className='Card_cont'>
-                <Card img={soocer} rating={3} description='Soccer lessons with messi' price={330}></Card>
-                <Card img={swimming} rating={3.5} description='Swimming with dolphin' price={30}></Card>
-                <Card img={gym} rating={5} description='Gym w/Cbum' price={500}></Card>
-                <Card img={guitar} rating={1} description='we steel your money' price={6000}></Card>
-                <Card img={running} rating={1.1} description='Run with Goggins' price={2222}></Card>
+                    {carddata}
                 </div>
             </div>
         </div>
