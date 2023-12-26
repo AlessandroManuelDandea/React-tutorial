@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import DandeaFace from '../img/presentation/myFace.jpg'
-import Email from '../img/presentation/email.svg'
-import Linkedin from '../img/presentation/linkedin.svg'
+import DandeaFace from '../../img/presentation/myFace.jpg'
+import Email from '../../img/presentation/email.svg'
+import Linkedin from '../../img/presentation/linkedin.svg'
 
 function Presentation() {
     return (

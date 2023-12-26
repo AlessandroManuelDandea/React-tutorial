@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Airbnbsvg from '../img/airbnb/airbnb.svg'
-import cooking from '../img/airbnb/cooking.jpeg'
-import film from '../img/airbnb/film.jpg'
-import guitar from '../img/airbnb/guitar.jpg'
-import gym from '../img/airbnb/gym.jpg'
-import running from '../img/airbnb/running.jpg'
-import makeup from '../img/airbnb/makeup.jpg'
-import soocer from '../img/airbnb/soocer.jpg'
-import swimming from '../img/airbnb/swiming.jpeg'
+import Airbnbsvg from '../../img/airbnb/airbnb.svg'
+import cooking from '../../img/airbnb/cooking.jpeg'
+import film from '../../img/airbnb/film.jpg'
+import guitar from '../../img/airbnb/guitar.jpg'
+import gym from '../../img/airbnb/gym.jpg'
+import running from '../../img/airbnb/running.jpg'
+import makeup from '../../img/airbnb/makeup.jpg'
+import soocer from '../../img/airbnb/soocer.jpg'
+import swimming from '../../img/airbnb/swiming.jpeg'
 import Card from './card_airbnb.js'
 import CardData from './CardData.js'
 
@@ -20,10 +20,13 @@ function Airbnb() {
     return (
         <div className='Airbnb_cont'>
             <div className='Airbnb'>
-                <nav className='nav_Airbnb'>
-                    <img src={Airbnbsvg} width={30} loading='lazy'></img>
-                    <h1>Airbnb</h1>
-                </nav>
+                <header>
+                    <nav className='nav_Airbnb'>
+                        <img src={Airbnbsvg} width={30} loading='lazy'></img>
+                        <h1>Airbnb</h1>
+                    </nav>
+                </header>
+                <main>
                 <div className='top_img_cont'>
                     <div className='top_img_item'>
                         <img src={cooking} width={30} loading='lazy'></img>
@@ -51,6 +54,7 @@ function Airbnb() {
                 <div className='Card_cont'>
                     {carddata}
                 </div>
+                </main>
             </div>
         </div>
     )

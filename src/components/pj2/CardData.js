@@ -1,11 +1,11 @@
-import cooking from '../img/airbnb/cooking.jpeg'
-import film from '../img/airbnb/film.jpg'
-import guitar from '../img/airbnb/guitar.jpg'
-import gym from '../img/airbnb/gym.jpg'
-import running from '../img/airbnb/running.jpg'
-import makeup from '../img/airbnb/makeup.jpg'
-import soocer from '../img/airbnb/soocer.jpg'
-import swimming from '../img/airbnb/swiming.jpeg'
+import cooking from '../../img/airbnb/cooking.jpeg'
+import film from '../../img/airbnb/film.jpg'
+import guitar from '../../img/airbnb/guitar.jpg'
+import gym from '../../img/airbnb/gym.jpg'
+import running from '../../img/airbnb/running.jpg'
+import makeup from '../../img/airbnb/makeup.jpg'
+import soocer from '../../img/airbnb/soocer.jpg'
+import swimming from '../../img/airbnb/swiming.jpeg'
 export default [
     
     {

@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import url('../src/style/style_pres.css');
 @import url('../src/style/style_airbnb.css');
+@import url('../src/style/style_travel.css');
+@import url('../src/style/style_meme.css');
 
 @layer base{
 
@@ -22,6 +24,7 @@
         fixed
         w-screen
         top-0
+        z-0
         bg-slate-800
         text-cyan-300;
         box-shadow: 0px 10px 10px #00000018;

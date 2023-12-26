@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@layer base {
+
+  .Travel {
+    @apply bg-blue-50
+    w-screen
+    mx-10;
+  }
+
+  .Travel header {
+    @apply
+    rounded-2xl;
+
+    box-shadow: 0px 10px 10px #0000001e;
+    filter: invert(29%) sepia(48%) saturate(7042%) hue-rotate(241deg)
+      brightness(80%) contrast(104%);
+  }
+
+  .Travel_cont {
+    @apply flex
+    flex-row
+    justify-center
+    mt-10
+    text-zinc-900;
+  }
+
+  .nav_travel {
+    @apply flex
+    flex-row
+    items-center
+    p-2
+    text-2xl
+    font-bold
+    rounded-2xl
+   ;
+    font-family: "Lobster", sans-serif;
+  }
+
+  .img_trav {
+    @apply float-left
+    object-cover
+    w-32
+    h-40
+    mr-6
+    rounded-md
+    ml-3
+    m-2;
+  }
+
+  .travel_card {
+    @apply my-3
+    rounded-2xl;
+    box-shadow: 0px 10px 10px #29009a13;
+  }
+
+  .Travel_cont main {
+    @apply flex
+    flex-col
+    overflow-y-scroll;
+    height: 30rem;
+  }
+
+  .travel_card div {
+    @apply flex
+    flex-row
+    items-center;
+  }
+
+  .travel_card div h2 {
+    @apply mr-2;
+    filter: invert(29%) sepia(48%) saturate(7042%) hue-rotate(241deg)
+      brightness(80%) contrast(104%);
+  }
+
+  .travel_card div img {
+    filter: invert(29%) sepia(48%) saturate(7042%) hue-rotate(241deg)
+      brightness(80%) contrast(104%);
+  }
+
+  .travel_card div a {
+    @apply text-slate-400;
+  }
+
+  .name_trav {
+    @apply text-4xl
+    font-bold;
+    font-family: "Lobster", sans-serif;
+  }
+
+  .date_trav {
+    @apply italic
+    font-medium;
+  }
+
+}

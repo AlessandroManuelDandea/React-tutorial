@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Star from '../img/airbnb/star.svg'
+import Star from '../../img/airbnb/star.svg'
 
 function Card(props) {
     return (

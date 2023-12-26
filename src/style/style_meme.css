@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+@layer base {
+  .Meme_Generator_cont {
+    @apply flex
+        flex-row
+        justify-center
+        mt-7
+        text-black;
+  }
+  .Meme_Generator {
+    @apply mx-12
+        w-screen
+        bg-purple-950;
+  }
+  .meme_nav {
+    @apply flex
+        flex-row
+        justify-between
+        items-center
+        bg-gradient-to-r from-purple-800 to-purple-600
+        px-3
+        p-2;
+    box-shadow: 0px 4px 10px #13001727;
+  }
+  .Meme_Generator_cont main {
+    @apply overflow-y-auto;
+    height: 30rem;
+  }
+  .meme_nav_left {
+    @apply flex
+        flex-row
+        items-center
+        text-white
+        text-3xl;
+    font-family: "Oswald", sans-serif;
+    -webkit-text-stroke-width: 0.09rem;
+    -webkit-text-stroke-color: black;
+  }
+  .meme_nav_right {
+    @apply text-purple-100;
+  }
+  .meme_form {
+    @apply flex
+        flex-col
+        justify-center
+        items-center
+        mt-10;
+  }
+  .meme_form_Top {
+    @apply flex
+        flex-row
+        items-center;
+  }
+  .meme_form_Top input {
+    @apply mx-7
+        p-1
+        border-4
+        border-black
+        rounded-md;
+  }
+  .meme_form_Bot {
+    @apply w-max
+        px-28
+        p-1
+        bg-gradient-to-r from-purple-800 to-purple-600
+        text-white
+        font-bold
+        rounded-md;
+    box-shadow: 0px 4px 10px #13001727;
+  }
+  .meme_generated_cont {
+    @apply flex
+        flex-row
+        justify-center
+        items-center
+        m-14;
+  }
+  .meme_generated {
+    @apply bg-white
+        flex
+        flex-col
+        items-center
+        justify-center
+        w-max
+        text-white
+        text-3xl
+        p-2;
+    font-family: "Oswald", sans-serif;
+    -webkit-text-stroke-width: 0.09rem;
+    -webkit-text-stroke-color: black;
+        
+  }
+}
